@@ -1,0 +1,33 @@
+.view__main {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 800px;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+  width: 60%;
+  margin-top: 40px;
+  color: #ffffff;
+}
+.view__main img {
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+}
+.view__main--data {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.like__buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.like__buttons--count {
+  display: grid;
+  grid-template-rows: auto auto;
+}

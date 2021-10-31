@@ -1,0 +1,40 @@
+main {
+  display: flex;
+  padding: 20px 0px;
+}
+
+main img {
+  cursor: pointer;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.post {
+  transition: transform 0.2s;
+}
+
+.post:hover {
+  transform: scale(1.2);
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  border: 2px solid white;
+}
+
+.post h3 {
+  margin: 10px;
+  color: #ffffff;
+}
+
+.post-title {
+  position: absolute;
+  height: fit-content;
+  background-color: red;
+  margin: 10px;
+  width: auto;
+  background: rgba(214, 200, 255, 0.29);
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+}
