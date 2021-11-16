@@ -23,20 +23,20 @@
     <main>
       <div class="form-wrapper">
         <h2>Signin</h2>
-        <form action="" method="POST">
+        <form method="GET" onsubmit="handleSubmit(event)">
           <div class="form-inline--item">
-            <label>Email</label>
-            <input type="email" placeholder="johndoe@example.com" />
+            <label>Email <span id="email-vld"></span></label>
+            <input type="email" placeholder="johndoe@example.com" id="email" />
           </div>
 
           <div class="form-inline--item">
-            <label>Username</label>
-            <input type="text" placeholder="johnd" />
+            <label>Username <span id="uname-vld"></span></label>
+            <input type="text" placeholder="johnd" id="uname" />
           </div>
 
           <div class="form-inline--item">
-            <label>Password</label>
-            <input type="password" placeholder="Enter password" />
+            <label>Password <span id="psd-vld"></span></label>
+            <input type="password" placeholder="Enter password" id="psd"/>
           </div>
 
           <div class="form-buttons">
@@ -48,5 +48,6 @@
         </form>
       </div>
     </main>
+    <script src="../js/signin.js"></script>
   </body>
 </html>

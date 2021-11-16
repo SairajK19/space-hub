@@ -28,7 +28,7 @@ main {
   backdrop-filter: blur(14px);
   border-radius: 7px;
   padding: 20px;
-  border: 2px solid #ffffff;
+  /* border: 2px solid #ffffff; */
   display: flex;
 }
 
@@ -84,6 +84,7 @@ main {
   color: #ffffff;
   font-weight: bolder;
   font-size: larger;
+  margin-top: 20px;
 }
 
 #preview {

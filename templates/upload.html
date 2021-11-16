@@ -26,30 +26,30 @@
           <div class="upload__section--upload">
             <h3>Upload File</h3>
             <p>Max file size 100MB (video)</p>
-            <input type="file" id="files" class="hidden" />
+            <input type="file" id="files" class="hidden" onchange="handleFileInput()" />
             <label for="files">Select file</label>
           </div>
           <div class="upload__section--preview">
-            <h3>Preview</h3>
+            <h3>Preview <span id="file-vld"></span></h3>
             <img src="../assets/astronaut.png" id="preview" />
           </div>
         </div>
 
         <div class="upload__form-right">
-          <form>
+          <form method="GET" onsubmit="handleSubmit(event)">
             <div class="form-inline--item">
-              <label>Title</label>
-              <input type="email" placeholder="johndoe@example.com" />
+              <label>Title <span id="title-vld"></span></label>
+              <input type="text" placeholder="lost in space" id="title" />
             </div>
 
             <div class="form-inline--item">
-              <label>Description</label>
-              <textarea></textarea>
+              <label>Description <span id="desc-vld"></span></label>
+              <textarea id="description"></textarea>
             </div>
 
             <div class="form-inline--item">
-              <label>Tags</label>
-              <select>
+              <label>Tags <span id="tag-vld"></span></label>
+              <select id="tags">
                 <option>Art</option>
                 <option>PS</option>
                 <option>Astronaut</option>
@@ -64,5 +64,6 @@
         </div>
       </div>
     </main>
+    <script src="../js/upload.js"></script>
   </body>
 </html>

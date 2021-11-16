@@ -11,16 +11,17 @@ main img {
 
 .post {
   transition: transform 0.2s;
+  margin: 10px;
 }
 
 .post:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .column {
   flex: 25%;
   max-width: 25%;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .post h3 {

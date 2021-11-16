@@ -15,6 +15,21 @@ body {
   min-height: 100vh;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: rgba(118, 73, 254, 0.17);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: #d3cef2;
+  border-radius: 10px;
+}
+
+
 .container {
   max-width: 1800px;
   margin: 0 auto;
@@ -53,6 +68,7 @@ header {
   cursor: pointer;
   transition: 500ms;
   text-decoration: none;
+  font-weight: 900;
 }
 
 .navbar__navigations a:hover {

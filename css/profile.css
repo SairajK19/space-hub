@@ -13,8 +13,8 @@ main {
 }
 
 .profile-details-wrapper {
-    position: fixed;
-    max-width: 450px;
+  position: fixed;
+  max-width: 450px;
 }
 
 aside {
@@ -68,8 +68,7 @@ aside .profile-details-wrapper h2 {
   grid-gap: 10px;
   text-align: center;
   border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
+  position: relative;
 }
 
 .card h3 {
@@ -88,6 +87,7 @@ p {
 
 #post-img {
   width: 100%;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .card-interactions {
@@ -128,4 +128,44 @@ p {
 
 .card-interactions__buttons div svg {
   cursor: pointer;
+}
+
+.edit {
+  width: 40px;
+  height: 40px;
+  background: rgba(51, 51, 51, 0.46);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  right: 30px;
+  top: -15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.edit img {
+  width: 25px;
+}
+
+
+.delete {
+  width: 40px;
+  height: 40px;
+  background: rgba(51, 51, 51, 0.46);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  right: -13px;
+  top: -15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.delete img {
+  width: 25px;
 }
