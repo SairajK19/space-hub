@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="run()">Run</button>
+    <script>
+      function getInput(obj) {
+        for (var item in obj) {
+          obj[item] = prompt("Enter your " + item);
+        }
+
+        return obj;
+      }
+
+      function run() {
+        var obj1 = { fname: "", lname: "", age: "", gender: "" };
+        var obj2 = { fname: "", lname: "", age: "", gender: "" };
+        var obj3 = { fname: "", lname: "", age: "", gender: "" };
+
+        obj1 = getInput(obj1);
+        obj2 = getInput(obj2);
+        obj3 = getInput(obj3);
+
+        
+      }
+    </script>
+  </body>
+</html>

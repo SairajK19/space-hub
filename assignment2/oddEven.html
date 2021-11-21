@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <span id="result"></span>
+    <script>
+      var n = prompt("Enter array length");
+      var result = document.getElementById("result");
+      var numbers = [],
+        odd = 0,
+        even = 0;
+
+      for (var i = 0; i < n; i++) {
+        numbers.push(parseInt(prompt("Enter element " + (i + 1))));
+      }
+
+      console.log(numbers);
+
+      for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 == 0 && numbers[i] !== "") {
+          even++;
+        } else if (numbers[i] % 2 !== 0) {
+          odd++;
+        }
+      }
+
+      result.innerHTML = "Even " + even + ", Odd " + odd;
+    </script>
+  </body>
+</html>

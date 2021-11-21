@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="run()">Run</button>
+    <script>
+      function printMatrix(rows, columns, arr) {
+        document.write("<table border='2px solid black'>");
+        for (var i = 0; i < rows; i++) {
+          document.write("<tr>");
+          for (var j = 0; j < columns; j++) {
+            document.write("<td>" + arr[i][j] + "</td>");
+          }
+          document.write("</tr>");
+          document.write("<br>");
+        }
+
+        document.write("</table>");
+      }
+
+      function takeInput(rows, columns, arr) {
+        var tempArr = [],
+          row;
+
+        for (var i = 0; i < rows; i++) {
+          row = prompt(
+            "Enter elements in row " + (i + 1) + " with spaces"
+          ).split(" ");
+
+          for (var j = 0; j < row.length; j++) {
+            tempArr.push(parseInt(row[j]));
+          }
+
+          arr.push(tempArr);
+          tempArr = [];
+        }
+
+        return arr;
+      }
+
+      function run() {
+        var rows = parseInt(prompt("Enter number of rows"));
+        var columns = parseInt(prompt("Enter number of columns"));
+        var arr1 = [],
+          arr2 = [],
+          tempArray = [],
+          sum = [];
+
+        alert("Enter martix 1, press ok to continue");
+        arr1 = takeInput(rows, columns, arr1);
+        alert("Enter martix 2, press ok to continue");
+        arr2 = takeInput(rows, columns, arr2);
+
+        console.log(arr1);
+        console.log(arr2);
+
+        printMatrix(rows, columns, arr1);
+        document.write("Array 1")
+        printMatrix(rows, columns, arr2);
+        document.write("Array 2")
+
+        for (var i = 0; i < rows; i++) {
+          for (var j = 0; j < columns; j++) {
+            tempArray[j] = arr1[i][j] + arr2[i][j];
+          }
+          sum.push(tempArray);
+          tempArray = [];
+        }
+
+        printMatrix(rows, columns, sum);
+        document.write("Sum")
+      }
+    </script>
+  </body>
+</html>
